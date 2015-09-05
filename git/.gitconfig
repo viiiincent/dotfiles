@@ -15,6 +15,11 @@
   current = green bold
 
 [color "status"]
+  header = white
+  updated = green bold
+  changed = red bold
+  untracked = red
+  branch = magenta
 
 [color "grep"]
   filename    = blue bold
@@ -26,8 +31,8 @@
 
 [alias]
   gr = "!f() { git grep -p --break --heading "$1"; }; f"
-  br   = branch -a
-  st  = status -sb
+  br = branch -a
+  st = status -sb
 
   lg  = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
   ls  = log --pretty=format:"%C(yellow)%h\\ %Cred%ad%C(green)%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
