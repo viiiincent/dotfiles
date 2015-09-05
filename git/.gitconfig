@@ -1,0 +1,46 @@
+[user]
+  name = 
+  email = 
+
+[core]
+  excludesfile = ~/.gitignore_global
+
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+
+[color "branch"]
+  current = green bold
+
+[color "status"]
+
+[color "grep"]
+  filename    = blue bold
+  function    = yellow bold
+  linenumber  = green
+
+[grep]
+  lineNumber = true
+
+[alias]
+  gr = "!f() { git grep -p --break --heading "$1"; }; f"
+  br   = branch -a
+  st  = status -sb
+
+  lg  = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+  ls  = log --pretty=format:"%C(yellow)%h\\ %Cred%ad%C(green)%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+  ll  = log --pretty=format:"%C(yellow)%h\\ %Cred%ad%C(green)%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short --numstat
+
+  dr  = "!f() { git diff "$1"^.."$1"; }; f"
+
+  d   = diff --word-diff
+  dc  = diff --cached
+
+  assume    = update-index --assume-unchanged
+  unassume  = update-index --no-assume-unchanged
+  assumed   = "!git ls-files -v | grep ^h | cut -c 3-"
+
+[credential]
+  helper = osxkeychain

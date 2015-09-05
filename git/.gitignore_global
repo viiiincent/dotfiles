@@ -1,0 +1,6 @@
+*.sublime-project
+*.sublime-workspace
+.vagrant
+.DS_STORE
+tmp
+log
