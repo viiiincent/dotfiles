@@ -1,4 +1,4 @@
-# config for fish, git & spacemacs
+# config
 
 Terminal
 Color scheme:
@@ -10,4 +10,4 @@ Font:
   - 11pt
 
 Karabiner
-  - /Users/v.marger/Library/Preferences/org.pqrs.Karabiner.plist
+  - ~/Library/Preferences/org.pqrs.Karabiner.plist
