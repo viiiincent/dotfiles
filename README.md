@@ -14,3 +14,15 @@ Karabiner
 
 Sublime Text
 	- ~/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings
+
+Pok3r remapping (RED BOARD (Fn+>))
+	- diamond arrows
+		- Fn+I => Fn+W
+		- Fn+J => Fn+A
+		- Fn+K => Fn+S
+		- Fn+L => Fn+D
+
+	- multimedia
+		- Fn+X => Fn+<
+		- Fn+C => Fn+>
+		- Fn+V => Fn+?
